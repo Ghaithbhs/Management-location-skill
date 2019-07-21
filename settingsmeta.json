@@ -1,0 +1,66 @@
+{
+    "name": "Management Department Location",
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Management Location",
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": "to change the location of the Management Department please enter the new location then click save"
+                    },
+                    {
+                        "name": "new_location",
+                        "type": "select",
+                        "label": "New Location",
+                        "options": "First floor|firstfloor;Second floor|secondfloor;Third floor|thirdfloor;Ground floor|groundfloor;Lobby|lobby",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "name": "Management Department information",
+                "fields": [
+                    {
+                        "name": "tl",
+                        "type": "text",
+                        "label": "Team Leader",
+                        "value": ""
+                    },
+                    {
+                        "type": "label",
+                        "label": "Opening time"
+                    },
+                    {
+                        "name": "opening",
+                        "type": "text",
+                        "label": "open from :",
+                        "value": "8:30"
+                    },
+                    {
+                        "name": "closure",
+                        "type": "text",
+                        "label": "to :",
+                        "value": "17:00"
+                    },
+                    {
+                        "type": "label",
+                        "label": "Contact information"
+                    },
+                    {
+                        "name": "email",
+                        "type": "text",
+                        "label": "Management E-mail",
+                        "value": "Management@focus-corporation.com "
+                    },
+                    {
+                        "name": "tel",
+                        "type": "text",
+                        "label": "Phone number",
+                        "value": "70 106 100"
+                    }
+                ]
+            }
+        ]
+    }
+}
