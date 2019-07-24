@@ -8,7 +8,7 @@ class ManagementLocation(MycroftSkill):
         MycroftSkill.__init__(self)
 
     @intent_handler(IntentBuilder("").require('Management.location'))
-    def handle_hr_location(self):
+    def handle_management_location(self):
         nl = self.settings.get("new_location")
         self.speak_dialog("Management.location", data={"nl": nl})
         if nl == "firstfloor":
@@ -21,13 +21,13 @@ class ManagementLocation(MycroftSkill):
             self.speak_dialog('ground.floor')
 
     @intent_handler(IntentBuilder("").require('Management.time'))
-    def handle_hr_time(self):
+    def handle_management_time(self):
         opening = self.settings.get("opening")
         closure = self.settings.get("closure")
         self.speak_dialog("Management.time", data={"opening": opening, "closure": closure})
 
     @intent_handler(IntentBuilder("").require('contact.Management'))
-    def handle_hr_contact(self):
+    def handle_management_contact(self):
         email = self.settings.get("email")
         tel = self.settings.get("tel")
         self.speak_dialog("Management.contact", data={"email": email, "tel": tel})
