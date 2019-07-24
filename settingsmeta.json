@@ -14,7 +14,7 @@
                         "type": "select",
                         "label": "New Location",
                         "options": "First floor|firstfloor;Second floor|secondfloor;Third floor|thirdfloor;Ground floor|groundfloor;Lobby|lobby",
-                        "value": ""
+                        "value": "firstfloor"
                     }
                 ]
             },
